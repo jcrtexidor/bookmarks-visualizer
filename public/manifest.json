@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Bookmark Visualizer",
+    "version": "1.0",
+    "author": "José Carlos Rodríguez Texidor",
+    "description": "Bookmarks Visualizer is a Firefox extension designed to transform the way you interact with your bookmarks. Say goodbye to the standard, mundane bookmarks list and welcome an elegant, user-friendly interface that showcases your bookmarks in a visually appealing and organized format.",
+    "icons": {
+        "48": "icons/bookmark-blue.svg"
+    },
+    "homepage_url": "https://github.com/jcrtexidor/bookmark-visualizer",
+    "default_locale": "en",
+    "browser_action": {
+        "default_icon": "icons/bookmark-blue.svg",
+        "default_title": "Bookmark Visualizer",
+        "theme_icons": [
+            {
+                "light": "icons/bookmark-blue.svg",
+                "dark": "icons/bookmark-red.svg",
+                "size": 16
+            }
+        ]
+    },
+    "background": {
+        "scripts": [
+            "background-script.js"
+        ],
+        "persistent": false,
+        "type": "module"
+    },
+    "permissions": [
+        "bookmarks",
+        "notifications"
+    ]
+}
